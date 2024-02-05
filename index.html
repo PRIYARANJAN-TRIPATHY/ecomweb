@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>E-commerce Product Page</title>
+</head>
+<body>
+    <header>
+        <h1>Product Catalog</h1>
+        <nav>
+            <ul>
+                <li><a href="#laptop">Laptop</a></li>
+                <li><a href="#headphones">Headphones</a></li>
+                <li><a href="#smartwatch">Smartwatch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="laptop">
+        <h2>Laptop</h2>
+        <p>Description: Powerful laptop with a high-resolution display, fast processor, and long battery life. Perfect for work and entertainment.</p>
+        <p>Price: $999.99</p>
+        <img src="file:///C:/Users/KIIT/Downloads/laptop.jpg" alt="Laptop Image">
+        <button onclick="addToCart('Laptop', 999.99)">Add to Cart</button>
+    </section>
+
+    <section id="headphones">
+        <h2>Headphones</h2>
+        <p>Description: Premium wireless headphones with noise-canceling technology. Crystal-clear sound and comfortable to wear for extended periods.</p>
+        <p>Price: $199.99</p>
+        <img src="file:///C:/Users/KIIT/Downloads/headphones.jpg" alt="Headphones Image">
+        <button onclick="addToCart('Headphones', 199.99)">Add to Cart</button>
+    </section>
+
+    <section id="smartwatch">
+        <h2>Smartwatch</h2>
+        <p>Description: Stylish smartwatch with fitness tracking, heart rate monitoring, and customizable watch faces. Stay connected with notifications on your wrist.</p>
+        <p>Price: $149.99</p>
+        <img src="file:///C:/Users/KIIT/Downloads/smartwatch.jpg" alt="Smartwatch Image">
+        <button onclick="addToCart('Smartwatch', 149.99)">Add to Cart</button>
+    </section>
+
+    <section id="terms">
+        <h2>Terms and Conditions</h2>
+        <button id="termsButton" onclick="toggleTerms()">Show Terms and Conditions</button>
+        <div id="termsContent" style="display: none;">
+            <h3>Exchange and Return Policy</h3>
+            <p>
+                We want you to be completely satisfied with your purchase. If you're not happy for any reason, 
+                you may return the item(s) within 30 days of receiving the order. Please ensure that the 
+                product is in its original condition and packaging.
+            </p>
+            <p>
+                For exchanges, please contact our customer service. We'll assist you in returning the original 
+                item and placing a new order.
+            </p>
+            <p>
+                Note: Some products may have specific return or exchange policies. Please check the product 
+                details for more information.
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
